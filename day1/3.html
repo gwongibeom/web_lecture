@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a tag</title>
+    <style>
+        .wrap {
+            width: 100vh;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .slash {
+            color: rgb(164, 164, 164);
+        }
+
+        .usernameSlashRepo {
+            width: 28%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="usernameSlashRepo">
+            <a href="https://www.github.com/gwongibeom" id="linkText">gwongibeom</a>
+            <span class="slash">/</span>
+            <a href="https://www.github.com/gwongibeom/web_lecture" id="linkText">web_lecture</a>
+        </div>
+        <br>
+        <div class="pageList">
+            <a href="">Previous</a>
+            <ol>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><button type="button" disabled>...</button></li>
+                <li><a href="">6</a></li>
+                <li><a href="">7</a></li>
+                <li><a href="">8</a></li>
+            </ol>
+            <a href="">Next</a>
+        </div>
+    </div>
+</body>
+
+</html>
