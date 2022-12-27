@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    color: #292929;
+}
+
+.grandpa {
+    width: 400px;
+    background-color: #787878;
+    position: relative;
+}
+
+.parent {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #cecece;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.child::before {
+    content: "123 ";
+}
+
+.child::after {
+    content: "123";
+}
+
+.red {
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
