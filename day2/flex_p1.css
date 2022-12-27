@@ -4,7 +4,7 @@
 }
 
 body {
-    width: 100vmax;
+    width: 98.8vmax;
     height: 100vmax;
     background-image: url("./user.jpg");
     backdrop-filter: blur(50px);
