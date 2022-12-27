@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    color: #292929;
+}
+
+.parent {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #cecece;
+}
+
+.parent::after {
+    clear: left;
+    display: block;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}
+
+.child::before {
+    content: "god did ";
+}
+
+.child::after {
+    content: " nigga";
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
