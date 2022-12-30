@@ -3,14 +3,18 @@ const express = require("express")
 const app = express()
 
 app.get("/", (req, res) => {
-    res.send("응애")
-    console.log("You`re in home!")
+    res.send("Main")
+    console.log("Main")
 })
 
-app.get("/home", () => {
-    console.log("You`re in home!")
+app.get("/home", (req, res) => {
+    res.send("<h1>You`re in home!</h1>")
+})
+
+app.get("/userinfo", (req, res) => {
+    req.send({ name: "yeji", age: 20 })
 })
 
 app.listen(3000, (res, req) => {
-    console.log("Hello world!")
+    console.log("Hello Server!")
 })
